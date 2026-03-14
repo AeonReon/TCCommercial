@@ -103,7 +103,7 @@
   /* ===== HERO ===== */
   .hero {
     min-height: 100vh;
-    background: var(--black);
+    background: var(--black) url('images/fleet hero.PNG') center/cover no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -115,12 +115,11 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 40px,
-      rgba(208,2,27,0.03) 40px,
-      rgba(208,2,27,0.03) 41px
+    background: linear-gradient(
+      105deg,
+      rgba(0,0,0,0.88) 0%,
+      rgba(0,0,0,0.72) 45%,
+      rgba(0,0,0,0.35) 100%
     );
     pointer-events: none;
   }
@@ -1188,7 +1187,7 @@
   @media (max-width: 1024px) {
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 4rem 2.5rem; }
-    .hero-right { height: 50vh; }
+    .hero-right { display: none; }
     .services { padding: 5rem 2.5rem; }
     .services-header { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr 1fr; }
@@ -1254,10 +1253,10 @@
   <div class="hero-left">
     <div class="hero-eyebrow">Ballymoney, County Antrim</div>
     <h1 class="hero-title">
-      The Van<br>
-      <span class="accent">Yard</span><br>
-      <span class="outline">Ballymoney</span><br>
-      <span style="font-size: 0.55em; color: #888; -webkit-text-stroke: 0px; font-weight: 700; letter-spacing: 0.04em;">Trusts.</span>
+      Van Sales,<br>
+      <span class="accent">Servicing</span><br>
+      <span class="outline">&amp; Rental</span><br>
+      <span style="font-size: 0.65em; -webkit-text-stroke: 0px; font-weight: 700; letter-spacing: 0.04em; color: var(--white);">In Ballymoney</span>
     </h1>
     <p class="hero-sub">
       Quality used vans, <strong>straightforward service</strong>, and the kind of deal you'd only get from someone local. We're right here on Kilraughts Road — come and kick the tyres.
@@ -1282,13 +1281,9 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-img-stack">
-      <img class="hero-img-main" src="/mnt/user-data/uploads/van_sales_yard.png" alt="TC Commercials Van Yard Ballymoney">
-      <div class="hero-img-overlay"></div>
-    </div>
     <div class="hero-badge">HPI Clear ✓</div>
     <div class="hero-salesman">
-      <img src="/mnt/user-data/uploads/salesman.jpeg" alt="TC Commercials Sales Team">
+      <img src="images/salesman.jpg" alt="TC Commercials Sales Team">
       <div class="hero-salesman-text">
         <div class="hero-salesman-name">Our Sales Team</div>
         <div class="hero-salesman-role">Ready to help · 028 2766 2069</div>
@@ -1397,7 +1392,7 @@
 
     <div class="van-grid fade-up">
       <div class="van-card featured">
-        <img src="/mnt/user-data/uploads/VanLease.jpeg" alt="Ford Transit Custom Inferno">
+        <img src="images/VanLease.jpg" alt="Ford Transit Custom Inferno">
         <div class="van-card-overlay">
           <span class="van-card-tag">Featured</span>
           <div class="van-card-name">Ford Transit Custom</div>
@@ -1405,7 +1400,7 @@
         </div>
       </div>
       <div class="van-card">
-        <img src="/mnt/user-data/uploads/fordvan.jpeg" alt="Ford Transit Custom Used">
+        <img src="images/fordvan.jpg" alt="Ford Transit Custom Used">
         <div class="van-card-overlay">
           <span class="van-card-tag">Used</span>
           <div class="van-card-name">Ford Transit Custom</div>
@@ -1413,7 +1408,7 @@
         </div>
       </div>
       <div class="van-card">
-        <img src="/mnt/user-data/uploads/smallvan_jpg.jpeg" alt="Small Panel Van">
+        <img src="images/ford transit connect.png.jpeg" alt="Small Panel Van">
         <div class="van-card-overlay">
           <span class="van-card-tag">Small Van</span>
           <div class="van-card-name">Ford Transit Connect</div>
@@ -1421,7 +1416,7 @@
         </div>
       </div>
       <div class="van-card">
-        <img src="/mnt/user-data/uploads/usedvans.jpeg" alt="Used Van Stock">
+        <img src="images/usedvans.jpg" alt="Used Van Stock">
         <div class="van-card-overlay">
           <span class="van-card-tag">50+ Vans</span>
           <div class="van-card-name">All Makes & Models</div>
@@ -1429,7 +1424,7 @@
         </div>
       </div>
       <div class="van-card">
-        <img src="/mnt/user-data/uploads/view_our_current_stock.jpeg" alt="Current Van Stock">
+        <img src="images/view our current stock.jpg" alt="Current Van Stock">
         <div class="van-card-overlay">
           <span class="van-card-tag">Updated Daily</span>
           <div class="van-card-name">New Stock Arriving</div>
@@ -1448,7 +1443,7 @@
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-img">
-    <img src="/mnt/user-data/uploads/van_sales_yard.png" alt="TC Commercials Ballymoney Yard">
+    <img src="images/fleet hero.PNG" alt="TC Commercials Ballymoney Yard">
     <div class="about-img-overlay"></div>
   </div>
   <div class="about-content">
@@ -1517,7 +1512,7 @@
 <section class="finance" id="finance">
   <div class="finance-inner">
     <div class="finance-visual fade-up">
-      <img class="finance-img" src="/mnt/user-data/uploads/salesman.jpeg" alt="TC Commercials Finance Advisor" style="filter: grayscale(30%);">
+      <img class="finance-img" src="images/salesman.jpg" alt="TC Commercials Finance Advisor" style="filter: grayscale(30%);">
       <div class="finance-badge">
         <div class="finance-badge-text">Finance<br>Available<br>Now</div>
       </div>
@@ -1576,7 +1571,7 @@
     <a href="tel:02827662069" class="btn-primary">Book a Service</a>
   </div>
   <div class="mot-img-panel">
-    <img src="/mnt/user-data/uploads/MOT-test-centre.jpeg" alt="MOT & Service Centre">
+    <img src="images/MOT-test-centre.jpg" alt="MOT & Service Centre">
   </div>
 </section>
 
@@ -1606,7 +1601,7 @@
       <a href="tel:07921293600" class="btn-primary fade-up stagger-4">Enquire About Rental</a>
     </div>
     <div class="rental-visual fade-up stagger-2">
-      <img class="rental-img" src="/mnt/user-data/uploads/usedvans.jpeg" alt="Van Rental Ballymoney">
+      <img class="rental-img" src="images/VanLease.jpg" alt="Van Rental Ballymoney">
       <div class="rental-tag">Rentals Available Now</div>
     </div>
   </div>
