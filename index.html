@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TC Commercials Ballymoney — Northern Ireland's trusted family-run van dealer. Buy, rent, sell or finance quality used vans. 4.8★ Google rating. Call 028 2766 2069.">
+    <meta name="description" content="TC Commercials Ballymoney — Northern Ireland's trusted family-run van dealer. Buy, rent, sell or finance quality used vans. 4.8★ Google rating. Call 07921 293600.">
     <meta name="keywords" content="vans for sale Ballymoney, van rental Northern Ireland, used vans County Antrim, TC Commercials, commercial vehicles NI, van finance Northern Ireland">
     <title>TC Commercials Ballymoney | Buy · Rent · Sell · Finance Quality Vans</title>
 
@@ -154,21 +154,22 @@
             justify-content: space-between;
             padding: 12px 0;
         }
-        .logo img { height: 110px; width: auto; }
+        .logo img { height: 90px; width: auto; }
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 20px;
         }
         .nav-links a {
             font-family: var(--font-heading);
             font-weight: 700;
-            font-size: .95rem;
+            font-size: .85rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: .5px;
             color: var(--dark);
             position: relative;
             transition: var(--transition);
+            white-space: nowrap;
         }
         .nav-links a::after {
             content: '';
@@ -214,19 +215,23 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('images/HeroDealership.jpg') center/cover no-repeat;
+            background: url('images/heroshottccommericals.png') center/cover no-repeat;
             z-index: 0;
         }
         .hero-bg::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(15,15,20,.78) 0%, rgba(15,15,20,.45) 100%);
+            background: linear-gradient(to right, rgba(15,15,20,.25) 0%, rgba(15,15,20,.75) 55%, rgba(15,15,20,.85) 100%);
         }
         .hero-content {
             position: relative;
             z-index: 1;
             padding: 60px 0 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
         }
         .hero-rating {
             display: inline-flex;
@@ -260,7 +265,7 @@
             margin-bottom: 32px;
             line-height: 1.7;
         }
-        .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; }
+        .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; justify-content: flex-end; }
 
         /* ===================================================================
            4 ACTION OPTIONS — Buy / Rent / Sell / Finance
@@ -489,6 +494,110 @@
         }
         .cat-card p { font-size: .88rem; color: var(--mid-gray); }
         .cat-card .btn { margin-top: 12px; font-size: .8rem; padding: 8px 18px; }
+
+        /* ===================================================================
+           VAN RENTAL SECTION
+        =================================================================== */
+        .van-rental {
+            padding: 80px 0;
+            background: var(--darker);
+        }
+        .van-rental .section-tag { color: #F59E0B; }
+        .van-rental .section-title { color: var(--white); }
+        .van-rental .section-sub { color: #9CA3AF; }
+
+        .rental-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .rental-card {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: #1F2937;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(255,255,255,.06);
+        }
+        .rental-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,.4); }
+        .rental-card-img-wrap { position: relative; }
+        .rental-card-img-wrap img { width: 100%; height: 200px; object-fit: cover; }
+        .rental-badge {
+            position: absolute;
+            top: 12px; left: 12px;
+            background: #F59E0B;
+            color: #111;
+            font-family: var(--font-heading);
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        .rental-card-body {
+            padding: 20px 18px;
+            text-align: center;
+        }
+        .rental-card-body h3 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+        .rental-card-body p {
+            font-size: .85rem;
+            color: #9CA3AF;
+            margin-bottom: 14px;
+        }
+        .rental-prices {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+        .rental-price-item {
+            background: rgba(255,255,255,.06);
+            border-radius: 6px;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        .rental-price-item .price-label {
+            font-size: .7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #9CA3AF;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .rental-price-item .price-value {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #F59E0B;
+        }
+        .rental-card .btn-enquire {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: .82rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 22px;
+            border-radius: var(--radius);
+            background: var(--red);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        .rental-card .btn-enquire:hover { background: var(--red-dark); transform: translateY(-2px); }
 
         /* ===================================================================
            ABOUT / FAMILY STORY
@@ -816,6 +925,34 @@
         .urgency-close:hover { color: var(--white); }
 
         /* ===================================================================
+           FLOATING WHATSAPP BUTTON
+        =================================================================== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 80px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,.25);
+            z-index: 998;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,.3);
+        }
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
+        }
+
+        /* ===================================================================
            SCROLL ANIMATIONS
         =================================================================== */
         .fade-up {
@@ -832,14 +969,6 @@
            RESPONSIVE
         =================================================================== */
         @media (max-width: 1024px) {
-            .options-grid { grid-template-columns: repeat(2, 1fr); }
-            .features-grid { grid-template-columns: repeat(2, 1fr); }
-            .reviews-grid { grid-template-columns: repeat(2, 1fr); }
-            .cat-grid { grid-template-columns: repeat(2, 1fr); }
-            .footer-grid { grid-template-columns: 1fr 1fr; }
-        }
-
-        @media (max-width: 768px) {
             .top-bar .container { justify-content: center; text-align: center; }
             .nav-links { display: none; }
             .hamburger { display: flex; }
@@ -853,14 +982,30 @@
                 padding: 20px;
                 box-shadow: var(--shadow-lg);
                 gap: 16px;
+                z-index: 1000;
             }
+            .logo img { height: 90px; width: auto; }
+            .options-grid { grid-template-columns: repeat(2, 1fr); }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+            .cat-grid { grid-template-columns: repeat(2, 1fr); }
+            .rental-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .hero-content { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
+            .hero-buttons { justify-content: flex-end; }
+        }
+
+        @media (max-width: 768px) {
             .logo img { height: 80px; width: auto; }
             .hero { min-height: 500px; margin-top: 130px; }
             .hero h1 { font-size: 2rem; }
+            .hero-content { align-items: flex-start; text-align: left; }
+            .hero-buttons { justify-content: flex-start; }
             .options-grid { grid-template-columns: 1fr 1fr; }
             .features-grid { grid-template-columns: 1fr; }
             .reviews-grid { grid-template-columns: 1fr; }
             .cat-grid { grid-template-columns: 1fr 1fr; }
+            .rental-grid { grid-template-columns: 1fr 1fr; }
             .about-grid { grid-template-columns: 1fr; }
             .contact-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
@@ -871,6 +1016,7 @@
         @media (max-width: 480px) {
             .options-grid { grid-template-columns: 1fr; }
             .cat-grid { grid-template-columns: 1fr; }
+            .rental-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -882,9 +1028,7 @@
             <div class="container">
                 <span><i class="fas fa-map-marker-alt"></i> 135a Kilraughts Road, Ballymoney, BT53 8LR</span>
                 <span>
-                    <a href="tel:02827662069"><i class="fas fa-phone"></i> 028 2766 2069</a>
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="tel:07921293600"><i class="fas fa-mobile-alt"></i> 07921 293600</a>
+                    <a href="tel:07921293600"><i class="fas fa-phone"></i> 07921 293600</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="mailto:Info@tccommercials.com"><i class="fas fa-envelope"></i> Info@tccommercials.com</a>
                 </span>
@@ -897,12 +1041,13 @@
                     <a href="#options">Our Services</a>
                     <a href="#stock">Stock</a>
                     <a href="#categories">Van Types</a>
+                    <a href="#van-rental">Vans for Rent</a>
                     <a href="#about">About Us</a>
                     <a href="#finance">Finance</a>
                     <a href="#mot-service">Servicing</a>
                     <a href="#reviews">Reviews</a>
                     <a href="#contact">Contact</a>
-                    <a href="tel:02827662069" class="btn btn-red nav-cta"><i class="fas fa-phone"></i> Call Now</a>
+                    <a href="tel:07921293600" class="btn btn-red nav-cta"><i class="fas fa-phone"></i> Call Now</a>
                 </div>
                 <button class="hamburger" id="menuToggle" aria-label="Toggle menu">
                     <span></span><span></span><span></span>
@@ -1124,6 +1269,115 @@
         </div>
     </section>
 
+    <!-- ===== VANS FOR RENT ===== -->
+    <section class="van-rental" id="van-rental">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 44px;">
+                <span class="section-tag fade-up">Available Now</span>
+                <h2 class="section-title fade-up">Vans for Rent</h2>
+                <p class="section-sub fade-up">Need a van for a day or a week? We hire out quality vans to tradespeople and businesses across Northern Ireland. Flexible daily and weekly rates — no fuss.</p>
+            </div>
+            <div class="rental-grid">
+                <!-- Small Van -->
+                <div class="rental-card fade-up">
+                    <div class="rental-card-img-wrap">
+                        <!-- Placeholder: swap for rental small van photo -->
+                        <img src="images/smallvan.png" alt="Small van for hire at TC Commercials Ballymoney — or similar">
+                        <span class="rental-badge">For Rent</span>
+                    </div>
+                    <div class="rental-card-body">
+                        <h3>Small Van</h3>
+                        <p>Berlingo, Kangoo, Combo or similar. Ideal for deliveries and city runs.</p>
+                        <div class="rental-prices">
+                            <div class="rental-price-item">
+                                <span class="price-label">Daily</span>
+                                <span class="price-value">from £35</span>
+                            </div>
+                            <div class="rental-price-item">
+                                <span class="price-label">Weekly</span>
+                                <span class="price-value">from £140</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-enquire"><i class="fas fa-calendar-check"></i> Enquire Now</a>
+                    </div>
+                </div>
+                <!-- Compact Van -->
+                <div class="rental-card fade-up">
+                    <div class="rental-card-img-wrap">
+                        <!-- Placeholder: swap for rental compact van photo -->
+                        <img src="images/transit-connect.jpg" alt="Compact van for hire at TC Commercials Ballymoney — or similar">
+                        <span class="rental-badge">For Rent</span>
+                    </div>
+                    <div class="rental-card-body">
+                        <h3>Compact Van</h3>
+                        <p>Transit Connect, Partner, Doblo or similar. The sweet spot of size and payload.</p>
+                        <div class="rental-prices">
+                            <div class="rental-price-item">
+                                <span class="price-label">Daily</span>
+                                <span class="price-value">from £45</span>
+                            </div>
+                            <div class="rental-price-item">
+                                <span class="price-label">Weekly</span>
+                                <span class="price-value">from £170</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-enquire"><i class="fas fa-calendar-check"></i> Enquire Now</a>
+                    </div>
+                </div>
+                <!-- Medium Van -->
+                <div class="rental-card fade-up">
+                    <div class="rental-card-img-wrap">
+                        <!-- Placeholder: swap for rental medium van photo -->
+                        <img src="images/fordvan.jpg" alt="Medium van for hire at TC Commercials Ballymoney — or similar">
+                        <span class="rental-badge">For Rent</span>
+                    </div>
+                    <div class="rental-card-body">
+                        <h3>Medium Van</h3>
+                        <p>Transit Custom, Vivaro, Trafic or similar. The workhorse of the trade.</p>
+                        <div class="rental-prices">
+                            <div class="rental-price-item">
+                                <span class="price-label">Daily</span>
+                                <span class="price-value">from £55</span>
+                            </div>
+                            <div class="rental-price-item">
+                                <span class="price-label">Weekly</span>
+                                <span class="price-value">from £200</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-enquire"><i class="fas fa-calendar-check"></i> Enquire Now</a>
+                    </div>
+                </div>
+                <!-- Large Van -->
+                <div class="rental-card fade-up">
+                    <div class="rental-card-img-wrap">
+                        <!-- Placeholder: swap for rental large van photo -->
+                        <img src="images/fleets.PNG" alt="Large van for hire at TC Commercials Ballymoney — or similar">
+                        <span class="rental-badge">For Rent</span>
+                    </div>
+                    <div class="rental-card-body">
+                        <h3>Large Van</h3>
+                        <p>Transit, Sprinter, Boxer or similar. Maximum space for maximum jobs.</p>
+                        <div class="rental-prices">
+                            <div class="rental-price-item">
+                                <span class="price-label">Daily</span>
+                                <span class="price-value">from £70</span>
+                            </div>
+                            <div class="rental-price-item">
+                                <span class="price-label">Weekly</span>
+                                <span class="price-value">from £260</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-enquire"><i class="fas fa-calendar-check"></i> Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 36px;">
+                <p style="color:#9CA3AF; font-size:.9rem; margin-bottom: 16px;">All prices subject to availability. Minimum rental period may apply. Contact us to check availability and confirm your booking.</p>
+                <a href="#contact" class="btn btn-red"><i class="fas fa-phone"></i> Call to Book</a>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== ABOUT / FAMILY STORY ===== -->
     <section class="about" id="about">
         <div class="container">
@@ -1252,7 +1506,7 @@
             <h2 class="fade-up">Ready to Find Your Next Van?</h2>
             <p class="fade-up">Give us a ring, send us a message, or pop in for a chat. No pressure — just honest advice from people who know vans inside out.</p>
             <div class="fade-up">
-                <a href="tel:02827662069" class="btn btn-white"><i class="fas fa-phone"></i> Call 028 2766 2069</a>
+                <a href="tel:07921293600" class="btn btn-white"><i class="fas fa-phone"></i> Call 07921 293600</a>
                 &nbsp;
                 <a href="#contact" class="btn btn-white" style="background:transparent; border:2px solid var(--white); color:var(--white);"><i class="fas fa-envelope"></i> Send an Enquiry</a>
             </div>
@@ -1280,9 +1534,7 @@
                         <div>
                             <h4>Call Us</h4>
                             <p>
-                                Office: <a href="tel:02827662069">028 2766 2069</a><br>
-                                Sales: <a href="tel:07921293600">07921 293600</a><br>
-                                Sales: <a href="tel:07597794029">07597 794029</a>
+                                <a href="tel:07921293600">07921 293600</a>
                             </p>
                         </div>
                     </div>
@@ -1375,12 +1627,17 @@
         </div>
     </section>
 
+    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+    <a href="https://wa.me/447921293600" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <img src="images/tccommercialslogoxl.png" alt="TC Commercials" style="height:60px; margin-bottom:16px; filter: brightness(0) invert(1);">
+                    <img src="images/tccommercialslogoxl.png" alt="TC Commercials" style="height:60px; margin-bottom:16px;">
                     <p>TC Commercials is a family-run van dealership based in Ballymoney, County Antrim. We specialise in quality used van sales, van rental, vehicle servicing and flexible finance — serving businesses and tradespeople right across Northern Ireland.</p>
                     <div class="footer-socials">
                         <a href="https://www.facebook.com/tccommercials/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1412,8 +1669,7 @@
                 <div>
                     <h4>Contact Us</h4>
                     <p><i class="fas fa-map-marker-alt" style="color:var(--red); margin-right:8px;"></i>135a Kilraughts Road, Ballymoney, BT53 8LR</p>
-                    <p><i class="fas fa-phone" style="color:var(--red); margin-right:8px;"></i><a href="tel:02827662069" style="color:rgba(255,255,255,.85);">028 2766 2069</a></p>
-                    <p><i class="fas fa-mobile-alt" style="color:var(--red); margin-right:8px;"></i><a href="tel:07921293600" style="color:rgba(255,255,255,.85);">07921 293600</a></p>
+                    <p><i class="fas fa-phone" style="color:var(--red); margin-right:8px;"></i><a href="tel:07921293600" style="color:rgba(255,255,255,.85);">07921 293600</a></p>
                     <p><i class="fas fa-envelope" style="color:var(--red); margin-right:8px;"></i><a href="mailto:Info@tccommercials.com" style="color:rgba(255,255,255,.85);">Info@tccommercials.com</a></p>
                 </div>
             </div>
@@ -1428,7 +1684,7 @@
     <div class="urgency-bar" id="urgencyBar">
         <div class="container">
             <p><i class="fas fa-fire" style="color: var(--red); margin-right:8px;"></i> Vans Sell Fast — Don't Miss Out! New stock arriving weekly.</p>
-            <a href="tel:02827662069" class="btn btn-red"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="tel:07921293600" class="btn btn-red"><i class="fas fa-phone"></i> Call Now</a>
         </div>
         <button class="urgency-close" id="urgencyClose" aria-label="Close banner"><i class="fas fa-times"></i></button>
     </div>
